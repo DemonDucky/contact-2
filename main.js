@@ -5,6 +5,10 @@ const instagram = document.querySelector('#instagram')
 
 body.style.height = height + 'px'
 
+window.addEventListener("resize", function () {
+    body.style.height = height + 'px'
+})
+
 function getOS() {
     var userAgent = window.navigator.userAgent,
         platform = window.navigator?.userAgentData?.platform || window.navigator.platform,
